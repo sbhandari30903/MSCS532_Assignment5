@@ -15,4 +15,4 @@
     * numpy
     * python v 3.6 or higher
 * To run open terminal and run
-    ** python3 quicksort.py **
+**python3 quicksort.py**
