@@ -43,12 +43,12 @@ def getdepthtime(arr, random_pivot):
 
     
 def sort_array(random_pivot, np_arr_type="unsorted"):
-    i = 1000
+    i = 100
     time = []
     depth = []
-    while i < 1000000:
+    while i < 200000:
         # for random array
-        array_list = np.random.randint(1, 10000000, i).tolist()
+        array_list = np.random.randint(1, 100000, i).tolist()
         #to get sorted numpy array
         if np_arr_type == "reverse_sorted":
             array_list = np.arange(i, 0, -1).tolist()
@@ -72,8 +72,8 @@ if __name__ == "__main__":
     sys.setrecursionlimit(1000000)
     
     arr_size = []
-    i = 1000
-    while i < 1000000:
+    i = 100
+    while i < 200000:
         arr_size.append(i)
         i *= 2
 
@@ -120,9 +120,9 @@ if __name__ == "__main__":
     plt.plot(arr_size, r_sorted_depth_randomized, label='random pivot on r_sorted array')
     plt.plot(arr_size, sorted_depth_randomized, label='random pivot on sorted array')
 
-    plt.plot(arr_size, rand_depth_deterministic, label='random pivot on unsorted array')
-    plt.plot(arr_size, r_sorted_depth_deterministic, label='random pivot on r_sorted array')
-    plt.plot(arr_size, sorted_depth_deterministic, label='random pivot on sorted array')
+    plt.plot(arr_size, rand_depth_deterministic, label='deterministic pivot on unsorted array')
+    plt.plot(arr_size, r_sorted_depth_deterministic, label='deterministic pivot on r_sorted array')
+    plt.plot(arr_size, sorted_depth_deterministic, label='deterministic pivot on sorted array')
     plt.xlabel('Array type')
     plt.ylabel('Rec Depth')
     plt.title('Recurssion depth - Random pivot Vs Last pivot')

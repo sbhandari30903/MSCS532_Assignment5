@@ -6,7 +6,7 @@
 * When random_pivot is True; it will select randomized version of Quicksort 
 * When False, it will use deterministic version of Quicksort(Always last element as pivot)
 * This implementation will run Quicksort algorithm on different sizes of datasets.
-* [1000, 2000, 4000, 8000, 16000, 32000, 64000, 128000, 256000, 512000] arry sizes
+* [100, 200, 400, 800, 1600, 3200, 6400, 12800, 25600, 51200, 102400] arry sizes
 * This implementation will run on different types of array; random, sorted, reverse sorted.
 * This implementation will run both deterministic and randomized versions of Quicksort.
 * This version will create a graph of time vs array sizes for all types array and both versions of Quicksort.
